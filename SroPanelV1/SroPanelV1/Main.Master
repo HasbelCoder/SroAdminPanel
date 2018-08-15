@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="SroPanelV1.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.0.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="jumbotron text-center">
+        <h1>SRO MONITOR PANEL V.1000</h1>
+        <p>
+            <img src="img/giris.png" class="img-circle" alt="user" width="150" height="150" runat="server" />
+        </p>
+        <nav class="navbar navbar-default">
+            
+                
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="yonetim.aspx">SrOPanel</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="yonetim.aspx">Server Ayarlar \ Settings</a></li>
+                    <li class="active"><a href="restart.aspx">Server Restart</a></li>
+                    <li class="active"><a href="profile.aspx">Profile Settings</a></li>
+                    <li><asp:Button  ID="Button5" runat="server" Text="Çıkış Yap/Logout" CssClass="pull-right btn-danger" OnClick="Button5_Click"  /></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        
+       
+    <div class="well">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        
+        </div>
+        </form>
+</body>
+</html>
